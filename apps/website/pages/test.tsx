@@ -4,7 +4,7 @@ import Author from '../components/Author';
 import BackButton from '../components/BackButton';
 import BlockQuote from '../components/BlockQuote';
 import BottomNavigation from '../components/BottomNavigation';
-import Code from '../components/code';
+import Code from '../components/Code';
 import Footer from '../components/Footer';
 import Heading from '../components/Heading';
 import Navigation from '../components/Navigation';
