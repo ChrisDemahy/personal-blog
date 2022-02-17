@@ -1,4 +1,7 @@
+// Required for NX
 const { join } = require('path');
+// import plugins
+const typeography = require('@tailwindcss/typography');
 
 module.exports = {
   purge: [join(__dirname, 'pages/**/*.{js,ts,jsx,tsx}')],
@@ -9,5 +12,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [typeography],
 };
