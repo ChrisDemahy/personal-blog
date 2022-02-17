@@ -27,6 +27,7 @@ export const page = () => {
             /*style="font-family:Georgia,serif;" */
           >
             <BackButton />
+
             <ArticleTitle
               name="Welcome to Minimal Blog"
               prettyDate="Published 19 February 2019"
@@ -52,12 +53,12 @@ export const page = () => {
               to convert the classes into components.
             </p>
 
-            {/* <Heading type="h1">Heading 1</Heading>
+            <Heading type="h1">Heading 1</Heading>
             <h2 className="py-2 font-sans text-5xl">Heading 2</h2>
             <h3 className="py-2 font-sans  text-4xl">Heading 3</h3>
             <h4 className="py-2 font-sans  text-3xl">Heading 4</h4>
             <h5 className="py-2 font-sans  text-2xl">Heading 5</h5>
-            <h6 className="py-2 font-sans  text-1xl">Heading 6</h6> */}
+            <h6 className="py-2 font-sans  text-1xl">Heading 6</h6>
 
             <Spacer />
 
