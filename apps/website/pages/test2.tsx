@@ -9,9 +9,9 @@ import { ParagraphBody } from '../components/ParagraphBody';
 export const Page: React.FC = () => {
   return (
     <body className="bg-gray-100 font-sans leading-normal tracking-normal">
-      {/* <Navigation /> */}
+      <Navigation />
 
-      <nav id="header" className="fixed w-full z-10 top-0">
+      {/* <nav id="header" className="fixed w-full z-10 top-0">
         <div
           id="progress"
           className="h-1 z-20 top-0"
@@ -77,7 +77,7 @@ export const Page: React.FC = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       <div className="container w-full md:max-w-3xl mx-auto pt-20">
         <div
