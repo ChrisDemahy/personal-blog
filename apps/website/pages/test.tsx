@@ -13,7 +13,7 @@ import { ParagraphBody } from '../components/ParagraphBody';
 import Spacer from '../components/Spacer';
 import Tags from '../components/Tags';
 
-export const page = () => {
+export const Article = () => {
   return (
     <div>
       <div className="bg-gray-100 font-sans leading-normal tracking-normal">
@@ -140,4 +140,4 @@ export const page = () => {
   );
 };
 
-export default page;
+export default Article;

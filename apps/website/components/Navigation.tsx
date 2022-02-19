@@ -7,27 +7,46 @@ export interface NavigationProps {
 export const Navigation: React.FC<NavigationProps> = ({
   title = 'Chris Demahy Blog',
 }) => {
+  React.useEffect(() => {
+    //Javascript to toggle the menu
+    document.getElementById('nav-toggle').onclick = function () {
+      document.getElementById('nav-content').classList.toggle('hidden');
+    };
+  }, []);
+
   return (
     // Set navigaton background to same a page background
-    <nav id="header" className="fixed w-full z-10 top-0 bg-gray-100">
+    <nav id="header" className="bg-gray-100 fixed w-full z-10 top-0">
       <div
         id="progress"
         className="h-1 z-20 top-0"
         style={{
-          background:
-            'linear-gradient(linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);',
+          background: `
+          linear-gradient(
+            to right,
+            #4dc0b5 var(--scroll),
+            transparent 0
+            );
+            `,
         }}
+        // Style tags are not the same in JSX
+        // TODO convert this to JSX Style tag
+        // style="
+        //   background: linear-gradient(
+        //     to right,
+        //     #4dc0b5 var(--scroll),
+        //     transparent 0
+        //   );
+        // "
       ></div>
 
       <div className="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
-        {/* Page title */}
         <div className="pl-4">
           <a
             className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl"
             href="#"
           >
-            {title}
-            {/* Minimal Blog */}
+            Minimal Blog
           </a>
         </div>
 
