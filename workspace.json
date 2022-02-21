@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "food-truck-example-site": "apps/food-truck-example-site",
+    "food-truck-example-site-e2e": "apps/food-truck-example-site-e2e",
     "website": "apps/website",
     "website-e2e": "apps/website-e2e"
   }

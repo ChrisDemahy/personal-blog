@@ -1,0 +1,56 @@
+{
+  "root": "apps/food-truck-example-site",
+  "sourceRoot": "apps/food-truck-example-site",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/food-truck-example-site",
+        "outputPath": "dist/apps/food-truck-example-site"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "food-truck-example-site:build",
+        "dev": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "food-truck-example-site:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "food-truck-example-site:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/food-truck-example-site"],
+      "options": {
+        "jestConfig": "apps/food-truck-example-site/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/food-truck-example-site/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
